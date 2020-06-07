@@ -16,4 +16,13 @@ class TestMiniDecorator < Minitest::Test
     person = Person.new(birthday: DateTime.parse('3rd Feb 2001 04:05:06+03:30'))
     assert_equal '03/02/2001', person.decorate(:birthday)
   end
+
+  def test_passthrogh
+    person = Person.new(first_name: 'Foo', last_name: 'Bar')
+    assert_equal 'Foo', person.decorate(:first_name)
+    assert_equal 'Bar', person.decorate(:last_name)
+    assert_raises NoMethodError do
+      person.decorate(:nonexistant)
+    end
+  end
 end

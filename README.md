@@ -46,6 +46,18 @@ end
 person = Person.new
 person.decorate(:name)
 # => "John Smith"
+
+#
+# If a decorator isn't defined, MiniDecorator attempts to call the method on the model directly
+#
+person.decorate(:first_name)
+# => "John"
+
+#
+# If the given item isn't a decorator or method, a NoMethodError is raised
+#
+person.decorate(:nonexistant)
+# => NoMethodError raised
 ```
 
 # License

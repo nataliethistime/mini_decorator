@@ -3,7 +3,7 @@ require 'mini_decorator'
 require 'ostruct'
 
 class Person
-  include MiniDecorator.new(PersonDecorator)
+  include MiniDecorator.new(PersonDecorator.new)
 
   def initialize(params)
     @first_name = params[:first_name] || ''

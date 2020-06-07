@@ -1,6 +1,4 @@
-module PersonDecorator
-  extend self
-
+class PersonDecorator
   def name(person)
     "#{person.first_name} #{person.last_name}"
   end

@@ -22,8 +22,7 @@ require 'mini_decorator'
 #
 # This is where our presentational methods live
 #
-module PersonDecorator
-  extend self
+class PersonDecorator
   def name(person)
     "#{person.first_name} #{person.last_name}"
   end
@@ -33,7 +32,7 @@ end
 # Imagine that this is an ActiveRecord model or something...
 #
 class Person
-  include MiniDecorator.new(PersonDecorator)
+  include MiniDecorator.new(PersonDecorator.new)
 
   def first_name
     'John'

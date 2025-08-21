@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'mini_decorator'
-  s.version = '0.0.2'
+  s.version = '1.0.0'
   s.platform = Gem::Platform::RUBY
   s.summary = 'Minimal decoration of Ruby objects using a "decorate" method.'
   s.author = 'Natalie Rose'

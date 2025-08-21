@@ -3,9 +3,9 @@ Gem::Specification.new do |s|
   s.version = '0.0.2'
   s.platform = Gem::Platform::RUBY
   s.summary = 'Minimal decoration of Ruby objects using a "decorate" method.'
-  s.author = 'Nathan McCallum'
-  s.email = 'hey@nathan-mccallum.com'
+  s.author = 'Natalie Rose'
+  s.email = 'natalie@omg.lol'
   s.files = ['lib/mini_decorator.rb']
-  s.homepage = 'https://github.com/1vasari/mini_decorator'
+  s.homepage = 'https://github.com/nataliethistime/mini_decorator'
   s.license = 'MIT'
 end
